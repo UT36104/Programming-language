@@ -1,0 +1,9 @@
+C:\Users\Михаил\Documents\Visual Studio 2015\Projects\Function\Function\bin\Debug\Function.exe.config
+C:\Users\Михаил\Documents\Visual Studio 2015\Projects\Function\Function\bin\Debug\Function.exe
+C:\Users\Михаил\Documents\Visual Studio 2015\Projects\Function\Function\bin\Debug\Function.pdb
+C:\Users\Михаил\Documents\Visual Studio 2015\Projects\Function\Function\obj\Debug\Function.csprojResolveAssemblyReference.cache
+C:\Users\Михаил\Documents\Visual Studio 2015\Projects\Function\Function\obj\Debug\Function.exe
+C:\Users\Михаил\Documents\Visual Studio 2015\Projects\Function\Function\obj\Debug\Function.pdb
+C:\Users\Михаил\Desktop\Programming language\Work 2\Zadanie5\Function\bin\Debug\Function.exe.config
+C:\Users\Михаил\Desktop\Programming language\Work 2\Zadanie5\Function\obj\Debug\Function.exe
+C:\Users\Михаил\Desktop\Programming language\Work 2\Zadanie5\Function\obj\Debug\Function.pdb
