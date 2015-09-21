@@ -11,7 +11,7 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             
-            Console.Write("Введите числа, для подсчета суммы напишите 'эпарнишастопэ': ");
+            Console.Write("Введите числа, для подсчета суммы крикните 'эпарнишастопэ': ");
             int a;
             string s;
             int summ = 0;
@@ -22,6 +22,7 @@ namespace ConsoleApplication1
                 if (s == "эпарнишастопэ")
                 {
                     s = "эпарнишастопэ";
+                    Console.WriteLine("Вы крикнули ЭПАРНИШАСТОПЭ. Цикл остоновился.");
                 }
                 else
                 {
@@ -30,7 +31,7 @@ namespace ConsoleApplication1
                 }
             }
             while (s!= "эпарнишастопэ");
-            Console.Write(summ);
+            Console.Write("Сумма чисел: " + summ);
             Console.ReadKey();
         }
     }
