@@ -22,7 +22,7 @@ namespace ConsoleApplication1
                 if (s == "эпарнишастопэ")
                 {
                     s = "эпарнишастопэ";
-                    Console.WriteLine("Вы крикнули ЭПАРНИШАСТОПЭ. Цикл остоновился.");
+                    Console.WriteLine("Вы крикнули ЭПАРНИШАСТОПЭ. Парниша остоновился.");
                 }
                 else
                 {
