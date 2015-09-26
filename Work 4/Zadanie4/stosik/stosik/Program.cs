@@ -25,13 +25,28 @@ namespace stosik
             Console.WriteLine("Меняем части массива местами: ");
             int pol_massiva = massivD / 2;
             int vtoraya_pol_massiva = pol_massiva + massivD % 2;
-            for (int i = 0; i < pol_massiva; i++)
+            if (massivD % 2 == 0)
             {
-                Console.Write(massiv[vtoraya_pol_massiva + i] + " ");
+                for (int i = 0; i < pol_massiva; i++)
+                {
+                    Console.Write(massiv[vtoraya_pol_massiva + i] + " ");
+                }
+                for (int v = 0; v < vtoraya_pol_massiva; v++)
+                {
+                    Console.Write(massiv[v] + " ");
+                }
             }
-            for (int v = 0; v < vtoraya_pol_massiva; v++)
+            else
             {
-                Console.Write(massiv[v] + " ");
+                for (int i = 0; i < pol_massiva; i++)
+                {
+                    Console.Write(massiv[vtoraya_pol_massiva + i] + " ");
+                }
+                Console.Write(massiv[pol_massiva] + " ");
+                for (int v = 0; v+1 < vtoraya_pol_massiva; v++)
+                {
+                    Console.Write(massiv[v] + " ");
+                }
             }
             Console.ReadKey();
         }
