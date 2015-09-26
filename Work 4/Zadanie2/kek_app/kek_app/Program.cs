@@ -35,6 +35,15 @@ namespace kek_app
                   Console.Write(massiv[r] + " ");
                 };
             };
+            Console.WriteLine();
+            Console.WriteLine("Индексы ЧЕТНЫХ элементов: ");
+            for (int r = 0; r < len; r = r + 1)
+            {
+                if (massiv[r] % 2 == 0)
+                {
+                    Console.Write("massiv[" + r + "] ");
+                };
+            };
             Console.ReadKey();
         }
     }
