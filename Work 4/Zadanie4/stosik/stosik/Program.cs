@@ -31,7 +31,7 @@ namespace stosik
             }
             for (int v = 0; v < vtoraya_pol_massiva; v++)
             {
-                Console.Write(massiv[pol_massiva - v] + " ");
+                Console.Write(massiv[v] + " ");
             }
             Console.ReadKey();
         }
