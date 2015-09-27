@@ -10,7 +10,7 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            int g, m3, i1, i2, x1, i4, i6, m4, m5, i8, i10;
+            int  i1, i2, i8, i10, i4, i6, m5, m7, m8,m4, m6;
             Console.Write("Введите размерность массива m1 = ");
             int n1 = int.Parse(Console.ReadLine());
             int[] m1 = new int[n1];
@@ -45,18 +45,17 @@ namespace ConsoleApplication1
 
             Console.WriteLine();
             Console.Write("Элементы, содержащиеся в m1, но не содержащиеся в m2: ");
-
             for (i1 = 0; i1 < m1_l; i1++)
             {
-                g = 0;
+                m4 = 0;
                 for (i2 = 0; i2 < m2_l; i2++)
                 {
                     if (m1[i1] != m2[i2])
                     {
-                        g++;
+                        m4++;
                     }
                 }
-                if (g == (i2))
+                if (m4 == (i2))
                 {
                     Console.Write(m1[i1] + " ");
 
@@ -67,15 +66,15 @@ namespace ConsoleApplication1
             Console.Write("Элементы, содержащиеся в m2, но не содержащиеся в m1: ");
             for (int i3 = 0; i3 < m2_l; i3++)
             {
-                x1 = 0;
+                m5 = 0;
                 for (i4 = 0; i4 < m1_l; i4++)
                 {
                     if (m2[i3] != m1[i4])
                     {
-                        x1++;
+                        m5++;
                     }
                 }
-                if (x1 == (i4))
+                if (m5 == (i4))
                 {
                     Console.Write(m2[i3] + " ");
                 }
@@ -85,16 +84,16 @@ namespace ConsoleApplication1
             Console.Write("Элементы, содержащиеся в m1 и m2: ");
             for (int i5 = 0; i5 < m1_l; i5++)
             {
-                m3 = 0;
+                m6 = 0;
                 for (i6 = 0; i6 < m2_l; i6++)
                 {
                     if (m1[i5] == m2[i6])
                     {
-                        m3++;
+                        m6++;
                     }
 
                 }
-                if (m3 > 0)
+                if (m6 > 0)
                 {
                     Console.Write(m1[i5] + " ");
                 }
@@ -104,30 +103,30 @@ namespace ConsoleApplication1
             Console.Write("Элементы, содержащиеся в первом и втором массивах без пересечения: ");
             for (int i7 = 0; i7 < m1_l; i7++)
             {
-                m4 = 0;
+                m7 = 0;
                 for (i8 = 0; i8 < m2_l; i8++)
                 {
                     if (m1[i7] == m2[i8])
                     {
-                        m4++;
+                        m7++;
                     }
                 }
-                if (m4 == 0)
+                if (m7 == 0)
                 {
                     Console.Write(m1[i7] + " ");
                 }
             }
             for (int i9 = 0; i9 < m2_l; i9++)
             {
-                m5 = 0;
+                m8 = 0;
                 for (i10 = 0; i10 < m1_l; i10++)
                 {
                     if (m2[i9] == m1[i10])
                     {
-                        m5++;
+                        m8++;
                     }
                 }
-                if (m5 == 0)
+                if (m8 == 0)
                 {
                     Console.Write(m2[i9] + " ");
                 }
