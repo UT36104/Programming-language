@@ -33,7 +33,6 @@ namespace Tvorс
                 int massiv2_strok = massiv2.GetLength(0);
                 int massiv2_stolb = massiv2.GetLength(1);
 
-                int umnoj;
                 int sloj;
 
                 Random rnd = new Random();
@@ -64,12 +63,29 @@ namespace Tvorс
 
                 Console.WriteLine();
                 Console.WriteLine("Перемножение массивов: ");
+                int[,] buffer_massiv3 = new int[massiv1_strok, massiv2_stolb];
+                int buffer_massiv3_strok = buffer_massiv3.GetLength(0);
+                int buffer_massiv3_stolb = buffer_massiv3.GetLength(1);
+
                 for (int i3 = 0; i3 < massiv1_strok; i3++)
                 {
-                    for (int j3 = 0; j3 < massiv1_stolb; j3++)
+                    for (int i = 0; i < buffer_massiv3_strok; i++)
                     {
-                       umnoj = massiv1[i3, j3] * massiv2[i3, j3];
-                       Console.Write(umnoj + "\t");
+                        for (int j = 0; j < buffer_massiv3_stolb; j++)
+                        {
+                            for (int k = 0; k < buffer_massiv3_strok; k++)
+                            {
+                                buffer_massiv3[i, j] = buffer_massiv3[i, j] + massiv1[i, k] * massiv2[k, j];
+                            }
+                        }
+                    }
+                }
+
+                for (int i4 = 0; i4 < buffer_massiv3.GetLength(0); i4++)
+                {
+                    for (int j4 = 0; j4 < buffer_massiv3.GetLength(1); j4++)
+                    {
+                        Console.Write((buffer_massiv3[i4, j4])/2 + "\t");
                     }
                     Console.WriteLine();
                 }
